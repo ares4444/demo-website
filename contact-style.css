@@ -73,20 +73,83 @@ form {
 
 .input-group {
     margin-bottom: 30px;
+    position: relative;
+    width: 100%;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    box-shadow: var(--shadow);
     background: transparent;
     font-size: 15px;
 }
 
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: var(--light);
+    cursor: text;
+    transition: 0.2s;
+}
 
+button {
+    padding: 10px 0;
+    color: var(--light);
+    outline: none;
+    background: transparent;
+    border: 1px solid var(--dark);
+    width: 100%;
+    cursor: pointer;
+    box-shadow: var(--shadow);
 
+}
+
+input:focus~label,
+input:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries */
+
+@media(max-width: 700px) {
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .input-group {
+        padding-right: 2rem;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+}
 
 
 
