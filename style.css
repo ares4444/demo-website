@@ -126,10 +126,52 @@ footer {
 /* Media Queries */
 
 @media(max-width: 700px) {
-.top-container {
-    grid-template-areas: ;
+    .showcase h1 {
+    font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
 }
+
+@media(max-width: 500px) {
+    .showcase h1 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    }
+
+    .showcase p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .showcase .btn {
+        padding: 0.6rem 1.3rem;
+        margin: 0;
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
